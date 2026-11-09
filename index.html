@@ -1,270 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Promise Chukwuemeka — Chemical Engineering student, web developer, and problem solver."
-    />
-    <title>Promise Chukwuemeka | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#home" aria-label="Promise Chukwuemeka home">
-        <span class="brand-mark">P<span>C</span></span>
-        <span>Emeka-agu <b>Promise</b></span>
-      </a>
-      <button
-        class="menu-toggle"
-        aria-label="Open navigation"
-        aria-expanded="false"
-      >
-        ☰
-      </button>
-      <nav class="nav" aria-label="Main navigation">
-        <a class="active" href="#home">Home</a><a href="#about">About</a
-        ><a href="#skills">Skills</a> <a href="#projects">Projects</a
-        ><a href="#education">Education</a><a href="#contact">Contact</a>
-      </nav>
-      <a class="header-cta" href="Promise-Chukwuemeka-CV.pdf" download
-        >↓ <span>Download CV</span></a
-      >
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Makeup, skincare and beauty essentials from Veloura Beauty.">
+  <title>Veloura Beauty | Your Glow, Your Rules</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A LITTLE SELF-CARE, A LOT OF GLOW ✨</div>
+  <header class="header">
+    <a class="logo" href="#home">veloura<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#categories">Categories</a><a href="#shop">Shop</a><a href="#about">Our story</a>
+    </nav>
+    <button class="cart-button" id="open-cart">Bag (<span id="cart-count">0</span>)</button>
+  </header>
 
-    <main class="layout" id="home">
-      <section class="card hero">
-        <div class="hero-copy">
-          <span class="eyebrow">Chemical Engineering Student <i></i> FUTO</span>
-          <p class="hello">Hi, I'm</p>
-          <h1>Emeka-agu <span>Promise</span></h1>
-          <p class="roles">
-            Chemical Engineering Student <b>|</b> Web Developer <b>|</b> Problem
-            Solver
-          </p>
-          <p class="intro">
-            I'm a curious, driven student exploring the intersection of
-            engineering, web development, and technology. I enjoy building
-            useful digital experiences, learning continuously, and turning ideas
-            into practical projects.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects"
-              >▣ &nbsp; View My Projects</a
-            >
-            <a class="button secondary" href="#contact">✉ &nbsp; Contact Me</a>
-          </div>
-          <div class="socials" aria-label="Social links">
-            <a
-              href="https://github.com/P16gjghkkkkk"
-              aria-label="GitHub"
-              target="_blank"
-              rel="noreferrer"
-              >GH</a
-            >
-            <a
-              href="https://www.linkedin.com/"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noreferrer"
-              >in</a
-            >
-            <a href="mailto:emekaagupromise@gmail.com" aria-label="Email">@</a>
-          </div>
-        </div>
-        <div class="hero-art" aria-label="Decorative blue night-sky artwork">
-          <div class="orb"></div>
-          <div class="moon"></div>
-          <div class="art-caption">
-            Better skills.<br />
-            Bigger dreams.
-          </div>
-          <div class="silhouette">
-            <span class="hood"></span><span class="jacket"></span>
-          </div>
-          <span class="art-note">BUILD · LEARN · CREATE</span>
-        </div>
-      </section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">BEAUTY THAT FEELS LIKE YOU</p>
+        <h1>Your glow.<br><em>Your rules.</em></h1>
+        <p>Discover feel-good beauty essentials made for every mood, every moment, and every version of you. Your next favourite is waiting.</p>
+        <a class="button" href="#shop">Shop the collection →</a>
+      </div>
+      <div class="hero-art" aria-label="Decorative Veloura beauty bottle">
+        <div class="orb"></div><div class="bottle"><span>VELOURA</span></div>
+        <div class="art-caption">The beauty<br>of being you.</div>
+      </div>
+    </section>
 
-      <aside class="card about card-pad" id="about">
-        <div class="section-title">
-          <span class="icon">♙</span>
-          <h2>About Me</h2>
-        </div>
-        <p>
-          I'm Emeka-agu Promise, a Chemical Engineering student at FUTO with an
-          interest in technology, problem-solving, and building practical
-          solutions. I'm developing my skills in web development and Python
-          while staying focused on my studies and personal growth.
-        </p>
-        <ul class="fact-list">
-          <li><span>✧</span> Federal University of Technology, Owerri</li>
-          <li><span>⌖</span> Nigeria</li>
-          <li><span>⌘</span> Always learning</li>
-        </ul>
-      </aside>
+    <section class="section" id="categories">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FAVOURITES</p><h2>Shop by category</h2></div><p>Little luxuries. Everyday essentials.</p></div>
+      <div class="categories">
+        <a href="#shop" class="category"><span>💄</span><h3>Makeup</h3><p>Express your look</p></a>
+        <a href="#shop" class="category"><span>🧴</span><h3>Skincare</h3><p>Care for your glow</p></a>
+        <a href="#shop" class="category"><span>🌸</span><h3>Fragrance</h3><p>Leave a lovely impression</p></a>
+        <a href="#shop" class="category"><span>✨</span><h3>Beauty tools</h3><p>Your routine, upgraded</p></a>
+      </div>
+    </section>
 
-      <section class="card skills card-pad" id="skills">
-        <div class="section-title">
-          <span class="icon">⚙</span>
-          <h2>Skills</h2>
-        </div>
-        <h3>Programming &amp; Web</h3>
-        <div class="chips">
-          <span class="chip orange">▣ HTML</span
-          ><span class="chip blue">▣ CSS</span
-          ><span class="chip yellow">JS JavaScript</span>
-          <span class="chip yellow">🐍 Python <small>Learning</small></span
-          ><span class="chip neutral">◉ Git &amp; GitHub</span>
-        </div>
-        <h3>Tools &amp; Technologies</h3>
-        <div class="chips">
-          <span class="chip blue">⌁ VS Code</span
-          ><span class="chip pink">✿ Figma</span
-          ><span class="chip neutral">✦ Google Workspace</span>
-          <span class="chip purple">◉ Canva</span
-          ><span class="chip orange">▣ Microsoft Office</span>
-        </div>
-        <h3>Other Skills</h3>
-        <div class="chips">
-          <span class="chip yellow">♧ Problem Solving</span
-          ><span class="chip blue">♟ Teamwork</span
-          ><span class="chip purple">☏ Communication</span>
-        </div>
-      </section>
+    <section class="section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE VELOURA EDIT</p><h2>Beauty bestsellers</h2></div><p>Picked to make you feel amazing.</p></div>
+      <div class="products" id="products"></div>
+    </section>
 
-      <section class="card projects card-pad" id="projects">
-        <div class="section-title section-title-row">
-          <div class="title-left">
-            <span class="icon">▣</span>
-            <h2>Featured Projects</h2>
-          </div>
-          <a href="#contact" class="text-link">Have a project? ↗</a>
-        </div>
-        <div class="project-grid">
-          <article class="project">
-            <div class="project-visual visual-portfolio">
-              <span class="mini-window"
-                ><b>Build<br />create<br />improve.</b><i></i
-              ></span>
-            </div>
-            <h3>Portfolio Website</h3>
-            <p>
-              A responsive personal website to present my skills, projects, and
-              learning journey.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual visual-study">
-              <div class="study-ui">
-                <b>Study Helper</b><span>Find notes and learning resources</span
-                ><i></i><i></i><i></i>
-              </div>
-            </div>
-            <h3>Study Helper Concept</h3>
-            <p>
-              A web-app concept for helping students organise study resources
-              and notes.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual visual-data">
-              <span class="code-lines"></span><span class="chart-bars"></span>
-            </div>
-            <h3>Data Analysis Practice</h3>
-            <p>
-              A project slot for Python-based data analysis. Add your real
-              dataset, notebook, and results here.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>Pandas</span><span>Matplotlib</span>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project-visual visual-engineering">
-              <span>PROCESS<br />ENGINEERING</span>
-              <div class="towers"><i></i><i></i><i></i><i></i></div>
-            </div>
-            <h3>Chemical Engineering Work</h3>
-            <p>
-              A place to showcase a verified report, design assignment, or
-              engineering analysis.
-            </p>
-            <div class="tags">
-              <span>Research</span><span>Engineering</span>
-            </div>
-          </article>
-        </div>
-        <p class="notice">
-          Before publishing, replace concept/demo cards with links to your
-          actual work and remove anything you haven't completed.
-        </p>
-      </section>
+    <section class="about" id="about">
+      <div><p class="eyebrow">A NOTE FROM VELOURA</p><h2>Beauty is personal.<br>So is your glow.</h2>
+      <p>We believe beauty should be fun, welcoming, and all about what makes you feel confident. Explore, experiment, and make every routine your own.</p></div>
+      <a class="button light-button" href="#shop">Find your feel-good →</a>
+    </section>
+  </main>
 
-      <aside class="card education card-pad" id="education">
-        <div class="section-title">
-          <span class="icon">♧</span>
-          <h2>Education</h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="dot"></span>
-            <h3>Federal University of Technology, Owerri (FUTO)</h3>
-            <p>B.Eng. Chemical Engineering</p>
-            <small>2024 – 2029 (Expected)</small>
-          </div>
-          <div class="timeline-item">
-            <span class="dot"></span>
-            <h3>Secondary School</h3>
-            <p>WAEC / SSCE</p>
-            <small>2018 – 2024</small>
-          </div>
-        </div>
-      </aside>
+  <footer class="footer">
+    <div><a class="logo" href="#home">veloura<span>.</span></a><p>Beauty essentials for every version of you.<br>© <span id="year"></span> Veloura Beauty.</p></div>
+    <div><h3>Let's connect</h3><p>Instagram: @velourabeauty<br>Email: hello@velourabeauty.com</p><small>Replace these demo contacts with your real details.</small></div>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">Our story</a></div>
+  </footer>
 
-      <aside class="card interests card-pad">
-        <div class="section-title">
-          <span class="icon">♧</span>
-          <h2>Interests</h2>
-        </div>
-        <ul class="interest-list">
-          <li>🎮 <span>Gaming</span></li>
-          <li>✦ <span>Anime</span></li>
-          <li>▣ <span>Movies &amp; Series</span></li>
-          <li>↗ <span>Exercise &amp; Fitness</span></li>
-          <li>⌘ <span>Technology &amp; AI</span></li>
-        </ul>
-      </aside>
+  <div class="backdrop" id="backdrop">
+    <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="drawer-heading"><h2 id="cart-title">Your bag</h2><button id="close-cart" class="close">×</button></div>
+      <div id="cart-items"></div>
+      <div class="total"><span>Subtotal</span><strong id="subtotal">₦0</strong></div>
+      <button class="button checkout" id="checkout">Continue to order</button>
+      <p class="note">Demo storefront: checkout is not connected to a payment provider yet.</p>
+    </aside>
+  </div>
+</body>
+</html>
 
-      <section class="card goals card-pad">
-        <div class="section-title">
-          <span class="icon">◎</span>
-          <h2>Professional Goals</h2>
-        </div>
-        <div class="goal-grid">
-          <div>
-            <span class="goal-icon">⌘</span>
-            <h3>Grow My Skills</h3>
-            <p>Keep improving as a developer and engineering student.</p>
-          </div>
-          <div>
-            <span class="goal-icon">🚀</span>
-            <h3>Build Real Projects</h3>
-            <p>Create useful solutions and gain practical experience.</p>
           </div>
           <div>
             <span class="goal-icon">▣</span>
